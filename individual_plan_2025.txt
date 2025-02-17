@@ -1,0 +1,7 @@
+Nguyễn Anh Đức (Duc.NA)
+- Mục tiêu:
+ - Nắm chắc kiến thức front-end
+ - Nắm chắc cú pháp và code thuần thục ReactJS
+ - Request sếp support dự án mới
+ - Nắm vững kiến thức BE (quan trọng)
+ - Chạy sản phẩm iOS Native riêng
