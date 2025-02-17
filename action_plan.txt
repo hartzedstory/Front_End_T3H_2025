@@ -1,0 +1,4 @@
+Action:
+- Làm bài tập đầy đủ
+- Học thêm framework swiftui
+- Bổ sung kiến thức về architechture
