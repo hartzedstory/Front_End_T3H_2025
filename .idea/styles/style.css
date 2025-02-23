@@ -1,6 +1,7 @@
-.demo {
-    color: red;
+.vContainer {
+    display: flex;
 }
-#demo-id {
-    color: green;
+.vCustom {
+    width: 50%;
+    padding: 10px;
 }
