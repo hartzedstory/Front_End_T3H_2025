@@ -1,6 +1,54 @@
-.demo {
-    color: red;
+.demo-margin {
+    box-sizing: content-box;
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    padding: 10px;
+    border: 5px solid gray;
 }
-#demo-id {
-    color: green;
+
+.demo-padding {
+    box-sizing: border-box;
+    width: 200px;
+    height: 100px;
+    background-color: green;
+    padding: 10px;
+    border: 5px solid gray;
+}
+.vContainer {
+    width: 100%;
+    height: 100%;
+    background-color: lightblue;
+    border: 5px lightcoral;
+}
+
+.vTopHeader {
+    width: 100vw;
+    height: 20vh;
+    border: 1px solid gray;
+}
+
+.vMain {
+    width: 100vw;
+    height: 60vh;
+    border: 1px solid gray;
+    margin: 400px, 200px, 400px, 200px;
+}
+
+.vAvatar {
+    box-sizing: border-box;
+    height: 100px;
+    aspect-ratio: 1;
+    background-color: red;
+    margin: 100px, 200px, 100px, 200px;
+}
+
+.vActionButtons {
+
+}
+.vActionCreate {
+
+}
+.vActionSignup {
+
 }
