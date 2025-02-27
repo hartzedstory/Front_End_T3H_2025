@@ -1,8 +1,9 @@
 .vContainer {
-    width: 340px;
-    height: 600px;
+    width: 1000px;
+    height: 40px;
     border: 1px solid gray;
     margin: 40px;
+    background-color: darkgray;
 }
 .vImageContainer {
     width: 300px;
@@ -29,6 +30,5 @@ hr {
     margin-left: 20px;
     width: 100px;
     height: 40px;
-    background-color: forestgreen;
     border-radius: 20px;
 }
