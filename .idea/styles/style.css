@@ -1,31 +1,47 @@
 .container {
     background-color: darkgray;
     width: 100%;
-    height: 50px;
+    height: 1000px;
     display: flex;
-    justify-content: flex-start;
-    align-content: center;
+    justify-content: center;
+    align-items: center;
     margin: 0;
-    flex-wrap: nowrap;
-    flex-direction: row;
 }
 .element {
     background-color: clear;
-    width: 25%;
-    height: 50px;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
+    width: 400px;
+    height: 250px;
     border: 1px solid black;
     display: flex;
-    flex-flow: row wrap;
-    text-align: center;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
-.elementImage {
-    width: 200px;
-    height: 150px;
-    background-color: gray;
+.elementBox {
+    width: 400px;
+    height: 50px;
+    display: flex;
+}
+.textBox {
+    margin-left: 5px;
+    margin-right: 16px;
+    margin-top: 8px;
+    width: 400px;
+    height: 50px;
+    background-color: white;
+}
+h3 {
+    margin-left: 16px;
+}
+.vButton {
+    margin-left: 16px;
+    margin-right: 16px;
+    width: 400px;
+    height: 50px;
+    background-color: darkolivegreen;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .test-display-inline {
