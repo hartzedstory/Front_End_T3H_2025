@@ -8,13 +8,23 @@
     margin: 0;
 }
 .element {
-    background-color: aqua;
-    width: 100px;
-    height: 100px;
-    margin: 0px;
+    background-color: clear;
+    width: 250px;
+    height: 350px;
+    margin: 16px;
     align-content: center;
+    justify-content: center;
     text-align: center;
     border: 1px solid black;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    align-items: center;
+}
+.elementImage {
+    width: 200px;
+    height: 150px;
+    background-color: gray;
 }
 
 .test-display-inline {
@@ -64,11 +74,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 }
 .vMainElement {
-    width: 50%;
+    width: 100%;
     height: 100px;
     margin-left: 16px;
     margin-right: 16px;
