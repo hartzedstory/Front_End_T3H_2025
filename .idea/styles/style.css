@@ -1,11 +1,21 @@
 .container {
     background-color: aliceblue;
-    width: 50%;
+    width: 400px;
     height: auto;
     padding: 30px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+}
+.element {
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+    align-content: center;
+    text-align: center;
+    border: 1px solid black;
 }
 
 .test-display-inline {
