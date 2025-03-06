@@ -1,124 +1,26 @@
-/*
-Các đơn vị đo sử dụng:
-- em: Lay font size cua view chua no, hoac gan nhat
-- rem:
-- vh
-- vw
-- %
- */
 
-@media (max-width: 576px){
 
-    .parent {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(9, 1fr);
-        gap: 8px;
-    }
-
-    .div1 {
-        grid-column: span 5 / span 5;
-    }
-
-    .div2 {
-        grid-column: span 5 / span 5;
-        grid-row: span 2 / span 2;
-        grid-row-start: 2;
-    }
-
-    .div3 {
-        grid-column: span 5 / span 5;
-        grid-row-start: 4;
-    }
-
-    .div4 {
-        grid-column: span 5 / span 5;
-        grid-row-start: 5;
-    }
-
-    .div5 {
-        grid-column: span 5 / span 5;
-        grid-row-start: 6;
-    }
-
-    .div6 {
-        grid-column: span 5 / span 5;
-        grid-row-start: 7;
-    }
-
-    .div7 {
-        grid-column: span 5 / span 5;
-        grid-row-start: 8;
-    }
-
-    .div8 {
-        grid-column: span 5 / span 5;
-        grid-row-start: 9;
-    }
-
+.full-height {
+    height: calc(3 * 100px);
 }
 
-@media (min-width: 577px){
+.image-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+}
 
-    .parent {
-        display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(9, 1fr);
-        gap: 8px;
-    }
 
-    .div1 {
-        grid-column: span 8 / span 8;
-    }
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
-    .div2 {
-        /*grid-column: span 3 / 6;*/
-        /*grid-row: span 3 / span 3;*/
-        grid-column-start: 3;
-        grid-column-end: 9;
-        grid-row-start: 2;
-        grid-row-end: 5;
-    }
 
-    .div3 {
-        grid-column: span 2 / span 2;
-        grid-row: span 8 / span 8;
-        grid-column-start: 1;
-        grid-row-start: 2;
-    }
-
-    .div4 {
-        grid-column: span 2 / span 2;
-        grid-row: span 2 / span 2;
-        grid-column-start: 3;
-        grid-row-start: 5;
-    }
-
-    .div5 {
-        grid-column: span 2 / span 2;
-        grid-row: span 2 / span 2;
-        grid-column-start: 5;
-        grid-row-start: 5;
-    }
-
-    .div6 {
-        grid-column: span 2 / span 2;
-        grid-row: span 2 / span 2;
-        grid-column-start: 7;
-        grid-row-start: 5;
-    }
-
-    .div7 {
-        grid-column: span 6 / span 6;
-        grid-row: span 2 / span 2;
-        grid-column-start: 3;
-        grid-row-start: 7;
-    }
-
-    .div8 {
-        grid-column: span 6 / span 6;
-        grid-column-start: 3;
-        grid-row-start: 9;
-    }
-
+.card-body {
+    flex-grow: 1;
+    overflow-y: auto;
 }
