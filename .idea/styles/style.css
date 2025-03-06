@@ -1,53 +1,124 @@
-.container {
-    background-color: aliceblue;
-    width: 400px;
-    height: auto;
-    padding: 30px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.element {
-    background-color: aqua;
-    width: 100px;
-    height: 100px;
-    margin: 0px;
-    align-content: center;
-    text-align: center;
-    border: 1px solid black;
+/*
+Các đơn vị đo sử dụng:
+- em: Lay font size cua view chua no, hoac gan nhat
+- rem:
+- vh
+- vw
+- %
+ */
+
+@media (max-width: 576px){
+
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        gap: 8px;
+    }
+
+    .div1 {
+        grid-column: span 5 / span 5;
+    }
+
+    .div2 {
+        grid-column: span 5 / span 5;
+        grid-row: span 2 / span 2;
+        grid-row-start: 2;
+    }
+
+    .div3 {
+        grid-column: span 5 / span 5;
+        grid-row-start: 4;
+    }
+
+    .div4 {
+        grid-column: span 5 / span 5;
+        grid-row-start: 5;
+    }
+
+    .div5 {
+        grid-column: span 5 / span 5;
+        grid-row-start: 6;
+    }
+
+    .div6 {
+        grid-column: span 5 / span 5;
+        grid-row-start: 7;
+    }
+
+    .div7 {
+        grid-column: span 5 / span 5;
+        grid-row-start: 8;
+    }
+
+    .div8 {
+        grid-column: span 5 / span 5;
+        grid-row-start: 9;
+    }
+
 }
 
-.test-display-inline {
-    display: inline; /* Hien thi tren dung mot dong, khong the thay doi kich thuoc*/
-    padding: 10px;
-    margin: 10px;
-    width: 100px;
-    height: 100px;
-    border: 1px solid black;
-}
-.test-display-block {
-    display: block; /* Hien thi tren tung dong*/
-    padding: 10px;
-    margin: 10px;
-    width: 100px;
-    height: 100px;
-    border: 1px solid black;
-}
+@media (min-width: 577px){
 
-.test-display-inline-block {
-    display: inline-block;
-    padding: 10px;
-    margin: 10px;
-    width: 100px;
-    height: 100px;
-    border: 1px solid black;
-}
-.test-display:first-child {
-    width: 100px;
-    height: 200px;
-}
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        gap: 8px;
+    }
 
-.test-display-flex-item {
+    .div1 {
+        grid-column: span 8 / span 8;
+    }
+
+    .div2 {
+        /*grid-column: span 3 / 6;*/
+        /*grid-row: span 3 / span 3;*/
+        grid-column-start: 3;
+        grid-column-end: 9;
+        grid-row-start: 2;
+        grid-row-end: 5;
+    }
+
+    .div3 {
+        grid-column: span 2 / span 2;
+        grid-row: span 8 / span 8;
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+
+    .div4 {
+        grid-column: span 2 / span 2;
+        grid-row: span 2 / span 2;
+        grid-column-start: 3;
+        grid-row-start: 5;
+    }
+
+    .div5 {
+        grid-column: span 2 / span 2;
+        grid-row: span 2 / span 2;
+        grid-column-start: 5;
+        grid-row-start: 5;
+    }
+
+    .div6 {
+        grid-column: span 2 / span 2;
+        grid-row: span 2 / span 2;
+        grid-column-start: 7;
+        grid-row-start: 5;
+    }
+
+    .div7 {
+        grid-column: span 6 / span 6;
+        grid-row: span 2 / span 2;
+        grid-column-start: 3;
+        grid-row-start: 7;
+    }
+
+    .div8 {
+        grid-column: span 6 / span 6;
+        grid-column-start: 3;
+        grid-row-start: 9;
+    }
 
 }
