@@ -1,50 +1,63 @@
-// const year = parseInt(prompt("Nhập năm:"));
-// const month = parseInt(prompt("Nhập tháng (1-12):"));
-//
-//
-// if (month >= 1 && month <= 12 && year > 0) {
-//     let dateInMonth;
-//     // Check xem co phai thang 2 ko
-//     if (month === 2) {
-//         // neu la nam nhuan thi in ra 29
-//         if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
-//             daysInMonth = 29;
-//         } else {
-//             daysInMonth = 28;
-//         }
-//     } else if (month === 4 || month === 6 || month === 9 || month === 11) {
-//         daysInMonth = 30;  // Tháng 4, 6, 9, 11 có 30 ngày
-//     } else {
-//         daysInMonth = 31;
-//     }
-//     alert(`Số ngày trong tháng ${month} của năm ${year} là: ${daysInMonth}`);
-// } else {
-//     alert("Dữ liệu nhập vào không hợp lệ.");
-// }
+// Mảng
+//Cách 1:
+const arr1 = [1, 2, 3, 4, 5, 6];
 
-const inputNumberStart = parseInt(prompt("Nhập số đầu tiên"));
-if (inputNumberStart < 2) {
-    alert("Khong phai so nguyen to")
-} else if (inputNumberStart === 2 || inputNumberStart === 3) {
-    alert("La so nguyen to")
+//Cách 2:
+const arr2 = new Array(1,3,4,5);
 
-} else if (inputNumberStart % 2 === 0 || inputNumberStart % 3 === 0) {
-    alert("Khong phai so nguyen to")
+arr1[2] = 9;
+console.log(arr1);
 
-} else {
-    for (let i = 5; i <= inputNumberStart; i++) {
-        if (inputNumberStart % i === 0) {
-            alert("Khong phai so nguyen to")
-            break
-        } else {
-            alert("La so nguyen to")
-            break
-        }
-    }
+for (let i = 0; i < arr1.length ; i++) {
+    console.log(arr1[i]);
 }
-// var a = "hello";
-// var x = 2;
-// console.log(x + a);
-//Có 3 từ khoá để khai bao một biến trong JS: var, let, const
 
-//var: Dung de khai bao bien, co tac dung luu tru du lieu
+var arr = [12,2342,532,4665,11]
+//Ex1: Them 1 phan tu vao dau mang: them so 99
+/*
+Mang ban dau: [ |  |  |  |   ]
+
+Mang sau: [ 99 |  |  |  |  |  |]
+ */
+var tempArr = [];
+tempArr[0] = 99
+for (let i = 0; i < arr.length; i++) {
+    tempArr[i+1] = arr[i];
+}
+arr = tempArr;
+tempArr = null;
+console.log("mang sau khi them o dau");
+console.log(arr)
+
+//Ex2: Them 1 phan tu vao cuoi mang: them so 100
+var tempArr2 = new Array(arr.length);
+tempArr2[arr.length] = 100;
+for (let i = 0; i < arr.length; i++) {
+    tempArr2[i] = arr[i];
+}
+arr = tempArr2;
+tempArr2 = null;
+console.log("mang sau khi them o cuoi");
+console.log(arr)
+
+
+//Ex3: Xoa 1 phan tu cuoi mang
+
+var tempArr3 = new Array(arr.length - 1);
+for (let i = 0; i < arr.length - 1; i++) {
+    tempArr3[i] = arr[i];
+}
+arr = tempArr3;
+tempArr3 = null;
+console.log("mang sau khi xoa o cuoi");
+console.log(arr)
+
+//Ex4: Xoa 1 phan tu dau mang
+var tempArr4 = new Array(arr.length - 1);
+for (let i = 0; i < arr.length - 1; i++) {
+    tempArr4[i] = arr[i + 1];
+}
+arr = tempArr4;
+tempArr4 = null;
+console.log("mang sau khi xoa o cuoi");
+console.log(arr) 
