@@ -2,17 +2,17 @@
 
 // Bai 1
 var array = new Array(13,2412,4123,4931,123,22,4,1);
-var tichCuaCaMang = 0;
-for (var i = 0; i < array.length; i++) {
-    tichCuacaMang *= array[i];
-}
-console.log(tichCuacaMang);
+// var tichCuaCaMang = 0;
+// for (var i = 0; i < array.length; i++) {
+//     tichCuacaMang *= array[i];
+// }
+// console.log(tichCuacaMang);
 
 // Tim so nho nhat chia het cho 2
 var soNhoNhatChiaHet2 = 0;
 for (var i = 0; i < array.length; i++) {
     if (array[i] % 2 == 0) {
-        if (soNhoNhatChiaHet2 < array[i]) {
+        if (soNhoNhatChiaHet2 > array[i] && array[i] > 0) {
             soNhoNhatChiaHet2 = array[i];
         }
     }
@@ -23,7 +23,7 @@ console.log(soNhoNhatChiaHet2);
 var soNhoNhatChiaHet3 = 0;
 for (var i = 0; i < array.length; i++) {
     if (array[i] % 3 == 0) {
-        if (soNhoNhatChiaHet3 < array[i]) {
+        if (soNhoNhatChiaHet3 > array[i]) {
             soNhoNhatChiaHet3 = array[i];
         }
     }
