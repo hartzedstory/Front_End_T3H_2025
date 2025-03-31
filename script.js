@@ -1,63 +1,33 @@
-// Mảng
-//Cách 1:
-const arr1 = [1, 2, 3, 4, 5, 6];
+const randomArray = Array.from({ length: 10 }, (_, index) => ({
+    id: index + 1,
+    name: `NGuyễn văn A ${index}`,
+    age: Math.floor(Math.random() * (50 - 18 + 1)) + 18, // Random tuổi từ 18 đến 50
+    score: Math.floor(Math.random() * 10) + 1,
+}));
 
-//Cách 2:
-const arr2 = new Array(1,3,4,5);
+console.log(randomArray);
 
-arr1[2] = 9;
-console.log(arr1);
-
-for (let i = 0; i < arr1.length ; i++) {
-    console.log(arr1[i]);
+// in ra màn hình các bạn có điểm chẵn
+// Su dung arrow function
+const evenScoreStudent = () => {
+    for (let i = 0; i < randomArray.length; i++) {
+        if (randomArray[i].score % 2 === 0) {
+            console.log("===================");
+            console.log(randomArray[i]);
+            console.log("===================");
+        }
+    }
 }
-
-var arr = [12,2342,532,4665,11]
-//Ex1: Them 1 phan tu vao dau mang: them so 99
-/*
-Mang ban dau: [ |  |  |  |   ]
-
-Mang sau: [ 99 |  |  |  |  |  |]
- */
-var tempArr = [];
-tempArr[0] = 99
-for (let i = 0; i < arr.length; i++) {
-    tempArr[i+1] = arr[i];
+evenScoreStudent();
+console.log("*********************************************\n*********************************************\n");
+// in ra màn hình các bạn có độ tuổi từ 22 -> 30 và có điểm trên 8
+const ageInRangeWithDesiredScore = () => {
+    for (let i = 0; i < randomArray.length; i++) {
+        if ((22 < randomArray[i].age < 30) && randomArray[i].score > 8) {
+            console.log("===================");
+            console.log(randomArray[i]);
+            console.log("===================");
+        }
+    }
 }
-arr = tempArr;
-tempArr = null;
-console.log("mang sau khi them o dau");
-console.log(arr)
-
-//Ex2: Them 1 phan tu vao cuoi mang: them so 100
-var tempArr2 = new Array(arr.length);
-tempArr2[arr.length] = 100;
-for (let i = 0; i < arr.length; i++) {
-    tempArr2[i] = arr[i];
-}
-arr = tempArr2;
-tempArr2 = null;
-console.log("mang sau khi them o cuoi");
-console.log(arr)
-
-
-//Ex3: Xoa 1 phan tu cuoi mang
-
-var tempArr3 = new Array(arr.length - 1);
-for (let i = 0; i < arr.length - 1; i++) {
-    tempArr3[i] = arr[i];
-}
-arr = tempArr3;
-tempArr3 = null;
-console.log("mang sau khi xoa o cuoi");
-console.log(arr)
-
-//Ex4: Xoa 1 phan tu dau mang
-var tempArr4 = new Array(arr.length - 1);
-for (let i = 0; i < arr.length - 1; i++) {
-    tempArr4[i] = arr[i + 1];
-}
-arr = tempArr4;
-tempArr4 = null;
-console.log("mang sau khi xoa o cuoi");
-console.log(arr) 
+ageInRangeWithDesiredScore();
