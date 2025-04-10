@@ -59,16 +59,13 @@ setTimeout(() => {
 //     .catch(err => console.log(err));
 
 //async. await
-let city = ""
-city = prompt("Enter city name")
 let lstWeather;
-async function getAPIData() {
+async function getAPIData(location) {
     try {
-        const res = await fetch("https://api.openweathermap.org/data/2.5/forecast?q="+city+"&appid=09a71427c59d38d6a34f89b47d75975c&units=metric");
+        const res = await fetch("https://api.openweathermap.org/data/2.5/forecast?q="+location+"&appid=09a71427c59d38d6a34f89b47d75975c&units=metric");
         const data = await res.json();
 
         const container = document.getElementById("weather-container");
-
         data.list.slice(0, 24).forEach(item => {
             const time = item.dt_txt;
             const temp = item.main.temp;
@@ -92,8 +89,14 @@ async function getAPIData() {
             container.appendChild(card);
         });
     } catch (error) {
-        console.error("Lỗi khi fetch API:", error);
+
     }
 }
 
-getAPIData();
+const onChangeValue = () => {
+    const container = document.getElementById("weather-container");
+    while (container.firstChild) {
+        container.removeChild(container.firstChild);
+    }
+    getAPIData(document.getElementById('textField').value);
+}
