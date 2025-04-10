@@ -43,7 +43,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JavaScript Debug.index.html.executor": "Run",
-    "Node.js.script.js.executor": "Run",
+    "Node.js.script.js.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
@@ -84,6 +84,8 @@
       <workItem from="1742211275466" duration="1022000" />
       <workItem from="1742472703702" duration="5389000" />
       <workItem from="1743387352685" duration="6858000" />
+      <workItem from="1743818171658" duration="6671000" />
+      <workItem from="1743951566643" duration="1153000" />
     </task>
     <servers />
   </component>
