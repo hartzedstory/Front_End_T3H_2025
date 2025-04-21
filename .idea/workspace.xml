@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5098f274-af47-4bc1-9e0a-b9d287bd5f0f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/entity/student_entity.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +44,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JavaScript Debug.index.html.executor": "Run",
-    "Node.js.script.js.executor": "Debug",
+    "Node.js.script.js.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "release/mini__project",
@@ -87,7 +87,7 @@
       <workItem from="1743387352685" duration="6858000" />
       <workItem from="1743818171658" duration="6671000" />
       <workItem from="1743951566643" duration="1153000" />
-      <workItem from="1744890115145" duration="2528000" />
+      <workItem from="1744890115145" duration="11374000" />
     </task>
     <servers />
   </component>
