@@ -1,4 +1,4 @@
-let users = [
+const users = [
 	{
 		id: 1,
 		first_name: 'Lorilee',
@@ -70,3 +70,4 @@ let users = [
 		password: '12345678',
 	},
 ];
+export default users;

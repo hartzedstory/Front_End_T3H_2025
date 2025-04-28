@@ -1,10 +1,11 @@
+import users from "./src/entity/users.js";
 
 const login = (email, password) => {
     const user = users.find(user => user.email === email && user.password === password);
     if (!user) {
-        alert("KHÔNG TIM THAY")
+        alert("User not found")
     } else {
-        alert("TIM THAY")
+        window.location.href = "./post.html";
     }
 }
 
